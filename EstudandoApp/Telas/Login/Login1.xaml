@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudandoApp.Telas.Login.Login1"
+             Title="Login1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <AbsoluteLayout>
+            <BoxView Color="#7377ff"
+                HorizontalOptions="EndAndExpand"                 
+                 CornerRadius="150"
+                 Grid.ColumnSpan="1"
+                 WidthRequest="300"
+                 HeightRequest="300"
+                 Grid.Column="1"
+                 AbsoluteLayout.LayoutBounds="400,10,20,20"
+                 />
+
+            <BoxView Color="#66baff"
+                 HorizontalOptions="StartAndExpand"
+                 CornerRadius="110"
+                 WidthRequest="220"
+                 HeightRequest="220"
+
+                 Grid.ColumnSpan="1"
+                 AbsoluteLayout.LayoutBounds="-5,0,0,0"
+                 />
+
+        </AbsoluteLayout>
+        <Border 
+                Grid.Row="1" 
+                Grid.Column="1"
+                WidthRequest="80"
+                HeightRequest="80"
+                
+                StrokeShape="RoundRectangle 40,40,40,40" >
+            <Image Source="emoji8.png"/>
+        </Border>
+        <VerticalStackLayout
+               Grid.Row="2"
+               Grid.ColumnSpan="3"
+            Margin="50,0,50,0"
+            >
+            <Border 
+                Margin="5"
+                Stroke="black"
+                StrokeShape="RoundRectangle 40,40,40,40" 
+                StrokeThickness="0.3"
+                Opacity="0.2">
+             
+                <Entry Placeholder="Username"
+                       ClearButtonVisibility="WhileEditing"
+                       IsTextPredictionEnabled="False"
+                       HorizontalTextAlignment="Center"
+                       PlaceholderColor="Blue"
+               />
+                
+         </Border>
+         <Border 
+             Margin="5"
+             Stroke="black"
+             StrokeShape="RoundRectangle 40,40,40,40" 
+             Opacity="0.2"
+             StrokeThickness="0.3">
+             
+             <Entry Placeholder="Password"
+                   ClearButtonVisibility="WhileEditing"
+                    PlaceholderColor="Blue"
+                    HorizontalTextAlignment="Center"
+                   IsPassword="True"
+                   />
+             
+        </Border>
+        </VerticalStackLayout>
+        <VerticalStackLayout Grid.Row="4" Grid.Column="1">
+            <HorizontalStackLayout Grid.Row="4" Grid.Column="1">
+                <CheckBox Color="#7377ff" />
+                <Label HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                        FontSize="12"
+                        TextColor="#7377ff"         
+                       Text="Remember me">
+                    
+                </Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        <VerticalStackLayout
+               Grid.Row="5"
+               Grid.ColumnSpan="3"
+            Margin="50,0,50,0" >
+            <Border 
+             Margin="5"
+             Stroke="black"
+             StrokeShape="RoundRectangle 40,40,40,40" 
+             StrokeThickness="0.3">
+                <Button 
+                    Grid.Row="5" 
+                    Text="Sign in"
+                    BackgroundColor="#7377ff"/>
+            </Border>
+            <Label 
+                Text="Forgot Password" 
+                TextColor="#7377ff"
+                HorizontalOptions="Center"
+                FontSize="12"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout 
+            Grid.Row="6" 
+            Grid.ColumnSpan="3" 
+            BackgroundColor="#7377ff"/>
+
+    </Grid>
+</ContentPage>
