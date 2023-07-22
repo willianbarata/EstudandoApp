@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EstudandoApp.Telas.Login.Login2"
+             Title="Login2">
+    <ScrollView>
+    <VerticalStackLayout>
+
+        <Image Source="imagem1.png" WidthRequest="250" HeightRequest="250"/>
+        <Label 
+            Text="Login Details"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <VerticalStackLayout Margin="20,0,20,0">
+            <Border Margin="5"
+                Stroke="black"
+                StrokeShape="RoundRectangle 5,5,5,5" 
+                StrokeThickness="0.5"
+                >
+        <Entry Placeholder="Username, email and phone number" />
+            </Border>
+
+            <Border Margin="5"
+                Stroke="black"
+                StrokeShape="RoundRectangle 5,5,5,5" 
+                StrokeThickness="0.5"
+                >
+                <Entry Placeholder="Password" />
+            </Border>
+            <Label 
+                Text="Forgot Password?" 
+                FontSize="10"
+                HorizontalTextAlignment="End"
+                
+                />
+            <Button Text="Login"
+                    BackgroundColor="#0b6efe"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    Margin="0,20,0,20"/>
+
+                <HorizontalStackLayout 
+                    Margin="0,20,0,20"
+                    HorizontalOptions="Center">
+                    <Line X1="40" X2="100" HeightRequest="2" >
+                        <Line.Background>
+                            <LinearGradientBrush 
+                            StartPoint="0,0"
+                            EndPoint="1,0">
+                                <GradientStopCollection>
+                                    <GradientStop Offset="0" Color="White"/>
+                                    <GradientStop Offset="1" Color="Blue"/>
+                                </GradientStopCollection>
+                            </LinearGradientBrush>
+                        </Line.Background>
+                    </Line>
+                    <Label Text="Or Sign up With"
+                           FontSize="10"
+                           Margin="10,0,10,0"/>
+                    <Line X1="40" X2="100" HeightRequest="2" >
+                        <Line.Background>
+                            <LinearGradientBrush 
+                            StartPoint="0,0"
+                            EndPoint="1,0">
+                                <GradientStopCollection>
+                                    <GradientStop Offset="1" Color="White"/>
+                                    <GradientStop Offset="0" Color="Blue"/>
+                                </GradientStopCollection>
+                            </LinearGradientBrush>
+                        </Line.Background>
+                    </Line>
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout  Spacing="50" HorizontalOptions="Center">
+                <Border 
+                    StrokeShape="RoundRectangle 40,40,40,40" 
+                    WidthRequest="40"
+                    HeightRequest="40">
+                    <Image Source="searchgoogle.png" WidthRequest="20" HeightRequest="20"/>
+                </Border>
+                    <Border 
+                    StrokeShape="RoundRectangle 40,40,40,40" 
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    
+                    >
+                        <Image Source="facebook.png" WidthRequest="20" HeightRequest="20" />
+                    </Border>
+                    <Border 
+                    StrokeShape="RoundRectangle 40,40,40,40" 
+                    WidthRequest="40"
+                    HeightRequest="40"
+                     >
+                        <Image Source="applelogo.png" WidthRequest="20" HeightRequest="20"/>
+                    </Border>
+                </HorizontalStackLayout>
+              
+            
+            </VerticalStackLayout>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

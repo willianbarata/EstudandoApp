@@ -49,7 +49,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\applelogo.png" />
 	  <None Remove="Resources\Images\emoji8.png" />
+	  <None Remove="Resources\Images\facebook.png" />
+	  <None Remove="Resources\Images\google.png" />
+	  <None Remove="Resources\Images\imagem1.png" />
+	  <None Remove="Resources\Images\searchGoogle.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -58,6 +63,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Telas\Login\Login1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Telas\Login\Login2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
