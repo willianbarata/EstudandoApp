@@ -4,6 +4,10 @@ Treinando Layout MAUI .NET - Login e outras
 #dotNet
 
 <p align="center">
-  <p> Tela 1</p>
+  <p> Login 1</p>
   <img width="300" height:"900" src="login1.png">
+</p>
+<p align="center">
+  <p> Login 2</p>
+  <img width="300" height:"900" src="Login2.png">
 </p>
